@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane depthTest="ENABLE" prefHeight="624.0" prefWidth="784.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="com.example.crud.PersonaController">
+  <tabs>
+    <Tab text="Clientes">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="546.0" prefWidth="1589.0">
+               <children>
+                  <Label id="lblTituloClientes" layoutX="209.0" layoutY="41.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="367.0" text="Almacén Laumi HC" textFill="#a70ab9">
+                     <font>
+                        <Font name="System Bold" size="41.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNombre" layoutX="70.0" layoutY="115.0" text="Nombre:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblApellidos" layoutX="297.0" layoutY="115.0" text="Apellidos:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblID" layoutX="535.0" layoutY="115.0" text="ID:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblDireccion" layoutX="296.0" layoutY="150.0" text="Dirección:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTelefono" layoutX="69.0" layoutY="150.0" text="Teléfono:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tablaPersonas" layoutX="25.0" layoutY="275.0" prefHeight="284.0" prefWidth="747.0">
+                    <columns>
+                      <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+                      <TableColumn fx:id="colApellidos" prefWidth="75.0" text="Apellidos" />
+                        <TableColumn fx:id="colID" prefWidth="64.0" text="ID" />
+                        <TableColumn fx:id="colDireccion" prefWidth="86.0" text="Dirección" />
+                        <TableColumn fx:id="colTelefono" prefWidth="75.0" text="Teléfono" />
+                        <TableColumn fx:id="colTipoPersona" text="Tipo Persona" />
+                        <TableColumn fx:id="colEmail" prefWidth="98.0" text="Email" />
+                        <TableColumn fx:id="colFechaNacimiento" minWidth="0.0" prefWidth="124.0" text="Fecha de Nacimiento" />
+                        <TableColumn fx:id="colNIT" prefWidth="69.0" text="NIT" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="txfNombre" layoutX="138.0" layoutY="113.0" />
+                  <TextField fx:id="txfApellidos" layoutX="371.0" layoutY="113.0" />
+                  <TextField fx:id="txfID" layoutX="567.0" layoutY="113.0" />
+                  <TextField fx:id="txfTelefono" layoutX="138.0" layoutY="148.0" />
+                  <TextField fx:id="txfDireccion" layoutX="371.0" layoutY="148.0" />
+                  <Label fx:id="lblTipoPersona" layoutX="538.0" layoutY="150.0" text="Tipo Persona:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txfTipoPersona" layoutX="635.0" layoutY="148.0" prefHeight="25.0" prefWidth="80.0" />
+                  <TextField fx:id="txfEmail" layoutX="138.0" layoutY="189.0" />
+                  <TextField fx:id="txfNIT" layoutX="138.0" layoutY="222.0" prefHeight="25.0" prefWidth="150.0" />
+                  <Label fx:id="lblEmail" layoutX="69.0" layoutY="191.0" text="Email:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblFechaNacimiento" layoutX="300.0" layoutY="191.0" text="Fecha de Nacimiento:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblNIT" layoutX="69.0" layoutY="224.0" text="NIT:">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAgregarPersona" layoutX="297.0" layoutY="222.0" mnemonicParsing="false" onAction="#btnAgregarPersona" text="Agregar Persona" />
+                  <TextField fx:id="txfFechaNacimiento" layoutX="453.0" layoutY="189.0" prefHeight="25.0" prefWidth="261.0" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Productos">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label id="lblTituloProductos" layoutX="155.0" layoutY="66.0" text="Almacén Laumi HC" textFill="#a70ab9">
+                     <font>
+                        <Font name="System Bold" size="41.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

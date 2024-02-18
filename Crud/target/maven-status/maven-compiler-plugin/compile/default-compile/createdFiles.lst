@@ -1,0 +1,4 @@
+com\example\crud\HelloApplication.class
+com\example\crud\Persona.class
+module-info.class
+com\example\crud\PersonaController.class
